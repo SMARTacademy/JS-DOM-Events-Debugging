@@ -13,10 +13,6 @@ function attr(elem, attrName, attrValue) {
     if ( attrValue != null ) {
         // Set the quick way first
         elem[attrName] = attrValue;
-
-        // If we can, use setAttribute
-        if ( elem.setAttribute )
-            elem.setAttribute(attrName,attrValue);
     }
 
     // Return the value of the attribute
@@ -28,19 +24,19 @@ function demo_13() {
 attr( document.getElementsByTagName("h1")[0], "class", "header" );
 
 // Set the value for each <input> element
-var input = document.getElementsByTagName("input");
-for ( var i = 0; i < input.length; i++ ) {
-    attr( input[i], "value", "" );
+var inputs = document.getElementsByTagName("input");
+for ( var i = 0; i < inputs.length; i++ ) {
+    attr( inputs[i], "value", "" );
 }
 
 attr(document.getElementsByTagName('input')[1], 'name', 'invalid')
 
 // Add a border to the <input> Element that has a name of ‘invalid’
-var input = document.getElementsByTagName("input");
-for ( var i = 0; i < input.length; i++ ) {
-    if ( attr( input[i], "name" ) == "invalid" ) {
-        input[i].style.border = "2px solid red";
-    }
-} 
+var inputs = document.getElementsByTagName("input");
+for ( var i = 0; i < inputs.length; i++ ) {
+    if ( attr( inputs[i], "name" ) == "invalid" ) {
+        inputs[i].style.border = "2px solid red";
+        }
+    }    
 }
 
