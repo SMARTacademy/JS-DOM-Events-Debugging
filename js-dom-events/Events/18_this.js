@@ -3,6 +3,7 @@ function demo_18() {
 var li = document.getElementsByTagName("li");
 for ( var i = 0; i < li.length; i++ ) {
     li[i].onclick = handleClick;
+    }
 }
 
 // The click handler – when called it changes the background and
@@ -10,5 +11,4 @@ for ( var i = 0; i < li.length; i++ ) {
 function handleClick() {
     this.style.backgroundColor = "blue";
     this.style.color = "white";
-}
 }
