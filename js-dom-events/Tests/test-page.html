@@ -9,6 +9,11 @@
          assertTrue("true should be true", true);
          assertTrue(true);
         }
+        // Fails
+        function testAssertTrue() {
+         assertTrue("true should be true", false);
+         assertTrue(false);
+        }
         // Test that an expression is false
         function testAssertFalse() {
            assertFalse("false should be false", true);

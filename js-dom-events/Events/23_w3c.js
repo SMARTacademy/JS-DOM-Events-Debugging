@@ -1,5 +1,5 @@
 // Find the first <form> element and attach a 'submit' event handler to it
-document.getElementsByTagName("form")[0].addEventListener('click',function(e){
+document.getElementsByTagName("form")[0].addEventListener('click', function(e){
     // Stop all form submission attempts
     return stopDefault( e );
 }, false); // false: bubbling, true: capturing
