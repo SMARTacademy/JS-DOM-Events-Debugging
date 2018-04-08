@@ -21,5 +21,5 @@ function demo_12() {
     var ul = document.getElementsByTagName('ul')[0];
     var innerText = getInnerText(ul);
 
-    var innerHtml = ul.innerHtml;
+    var innerHtml = ul.innerHTML;
 }
