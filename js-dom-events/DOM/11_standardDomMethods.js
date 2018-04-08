@@ -25,5 +25,5 @@ function getClassElements(className, elementName) {
 function demo_11() {
     var list = findElementById('list');
     var listItems = findAllTagsInScope(list, 'li');
-    var headers = getClassElements('header', 'h1');
+    var headers = getClassElements('first-header', 'h1');
 }
