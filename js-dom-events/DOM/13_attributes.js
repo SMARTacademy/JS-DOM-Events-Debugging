@@ -31,8 +31,6 @@ for ( var i = 0; i < inputs.length; i++ ) {
 
 attr(document.getElementsByTagName('input')[1], 'name', 'invalid')
 
-// Add a border to the <input> Element that has a name of ‘invalid’
-var inputs = document.getElementsByTagName("input");
 for ( var i = 0; i < inputs.length; i++ ) {
     if ( attr( inputs[i], "name" ) == "invalid" ) {
         inputs[i].style.border = "2px solid red";
